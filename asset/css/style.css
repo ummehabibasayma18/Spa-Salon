@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kalam:wght@300;400;700&family=Lobster&display=swap');
+body{
+     
+     font-family: "Lobster", sans-serif!important; 
+     font-weight: 400;
+     font-style: normal;
+    /* font-family: "Kalam", cursive !important; */
+}
+/*common style start */
+html{
+    scroll-behavior: smooth;
+}
+
+.text-primary{
+    color:#330b3e !important ;
+}
+.text-secondary{
+    color:#dbbbe3 !important ;
+}
+.bg-primary{
+    background-color:#e8d1ed !important ;
+}
+.bg-secondary{
+   background-color:#410f4f!important ;
+}
+.Popular-tittle{
+    position: relative;
+    display: inline-block;
+
+}
+
+.Popular-tittle::after{
+    content: "";
+    position:absolute;
+    left: 0px;
+    bottom: -8px;
+    width: 56px;
+    height: 3px;
+    background-color:#9224b0;
+}
+.section-title{
+    position: relative;
+    display: inline-block;
+}
+.section-title::after{
+    content: "";
+    position: absolute;
+    left: 20px;
+    bottom: -10px;
+    width: 50px;
+    height: 3px;
+    background-color:#9224b0;
+}
+.border-primary{
+    border-color: #9224b0 !important;
+}
+.gallery-title{
+    position: relative;
+    display: inline-block;
+}
+.searchBtn{
+    margin:0 0 0 auto;
+}
+/*common style end */
+.navbar {
+   
+    --bs-navbar-toggler-focus-width: 0px;
+    
+}
+header nav{
+    height: 65px;
+    overflow: visible;
+    z-index: 20;
+}
+header .nav-link{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+header .nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color:#dbbbe3 !important;
+    transition: .5s;
+}
+header .nav-link:hover::before{
+    width: 100%;
+}
+header .nav-link:hover{
+    color:#dbbbe3 ;
+}
+
+
+header .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #dbbbe3;
+}
+header .btn-success{
+    background-color:#dbbbe3;
+}
+header .btn-success:hover{
+    background-color: #dbbbe3 ;
+}
+
+
+/* hero section start  */
+.carousel-inner,
+.carousel-item,
+.slider-content{
+    height: 100vh;
+    max-height: 600px;
+}
+.carousel-inner .carousel-item-1 {
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/luxury-aromatherapy-spa-treatment-with-scented-candle-flame-generated-by-ai.jpg);
+    background-size: cover;
+    
+}
+.carousel-inner .carousel-item-2 {
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/herbal-compress-herbal-spa-treatment-equipments-put-dark-floor.jpg);
+    background-size: cover;
+}
+.carousel-inner .carousel-item-3 {
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/AdobeStock_646268020_Preview.jpeg);
+    background-size: cover;
+}
+.carousel-inner .carousel-item-4 {
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/AdobeStock_646268130_Preview.jpeg);
+    background-size: cover;
+}
+
+
+/* hero section end  */
+
+/* Popular Services section start   */
+.about-section .service-img{
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.about-section .service-img .image{
+    transition: .5s;
+}
+.about-section .service-img .image:hover{
+    transform: scale(1.2);
+}
+.about-section .service-heading:hover{
+    color: #9224b0 !important;
+}
+.about-section .service-icon:hover{
+    background-color: #9224b0;
+    color: white;
+}
+.popular-inner img{
+    height: 350px;
+    width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+ }
+/* propular service section end */
+/* gellary section start */
+.gallery-section .section-title::after{
+    left: 0;
+  }
+  .gallery-section .gallery-item {
+    position: relative;
+    overflow: hidden;
+ }
+
+.gallery-section .gallery-item .gallery{
+    width: 90%;
+    position: absolute;
+    bottom: -100%;
+    left: 5%;
+    opacity: 0;
+    transition: 1s !important;
+}
+.gallery-section .gallery-item:hover .gallery{
+    opacity: 1 !important ;
+   bottom: 0;
+}
+/* gellary section end */
+/* AboutSection start */
+.AboutSection{
+    position: relative;
+    z-index: 1;
+    padding: 70px 0; 
+    background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/AdobeStock_116066523_Preview.jpeg);
+    background-position:center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.AboutSection .btn:hover{
+    color:white !important;
+    background-color: #330b3e !important;
+}
+/* AboutSection end */
+/* testimonial section start  */
+.textimonial-section .carousel-inner,
+.textimonial-section .carousel-item, 
+.textimonial-section .slider-content {
+    height: auto;
+}
+.social-link{
+    font-size: 40px;
+}
+.social-link .fa-brands:hover{
+    color: #9224b0 !important;
+}
+/* testimonial section end  */
+
+/* offer section start  */
+.offer-section{
+    background-image: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .6)), url(../img/massage-table-setting-with-white-candles-black-stones.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.offer-section .section-title::after{
+    left: 0;
+}
+.offer-section .offer-btn:hover{
+background-color: #9224b0 !important;
+color: white !important;
+}
+/* offer section end  */
+
+/* join section start  */
+.join-section .email-fild{
+    border: 1px solid #9224b0;
+    outline: none;
+}
+/* join section end  */
+/* contact sec start */
+.containerBox{
+    margin-top: 10vh;
+  }
+form{
+    max-width: 500px;
+    margin-top: 20vh;
+    margin: 0 auto;
+    padding: 40px;
+    /* background-color:blue ; */
+}
+.form-control{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.form-control label {
+    font-size:18px;
+    margin-bottom: 8px;
+    color:rgb(4, 6, 7);
+    font-weight: bold;
+    display:block;
+    border:none;
+    outline:none;
+    border-radius: 7px;
+}
+.form-control textarea{
+    resize:none;
+    color:#0d0d0b;
+}
+.submitBtn {
+    padding:10px;
+    width:100%;
+    border-radius: 7px;
+    font-size: 18px;
+    cursor:pointer;
+}
+/* contact sec end */
+/* footer top section start  */
+.footer-top .item-icon{
+background-color: rgba(0, 0, 0, .6);
+opacity: 0;
+transition: .5s all;
+}
+.footer-top .item:hover .item-icon{
+   opacity: 1;
+}
+.footer-top .item:hover img{
+    transform: scale(1.1);
+}
+.footer-top .item img{
+   transition: .5s all;
+}
+/* footer top section end  */
+
+
+

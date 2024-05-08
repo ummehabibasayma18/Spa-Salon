@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <title>Spa salon</title>
+     
+      <!-- fontawesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      
+       <!-- bootstarp css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" > 
+
+    <!-- aos css link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+
+     <!-- main stylesheet -->
+     <link rel="stylesheet" href="asset/css/style.css">
+     <link rel="stylesheet" href="asset/css/responsive.css">
+    </head>
+  
+
+  <body>
+    <header>
+      <!-- navbar start -->
+       <nav class="navbar navbar-expand-lg  navbar-expand-md bg-secondary-subtle bg-secondary  fixed-top">
+          <div class="container">
+            <a class="navbar-brand text-white fs-2 " href="#">
+              <i class="fa-solid fa-hand-sparkles"></i>Spa Salon
+            </a>
+
+            
+            <div>
+              <i class="fa-regular fa-moon fs-3 ms-4 mt-2 text-white d-md-none"></i>
+              <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#mynav" aria-controls="#mynav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-white bg-primary p-2"></i>
+              </button>
+            </div> 
+         
+            
+            <div class="collapse navbar-collapse px-5 justify-content-space-between " id="mynav">
+              <ul class="navbar-nav  mb-2 mb-lg-0 mx-auto ">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#carouselExampleInterval">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Popular Services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-disabled="true" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#gallary" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#Popular Services">Popular Services</a></li>
+                    <li><a class="dropdown-item" href="#gallary">Gallary</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#Appoinment">Appoinment</a></li>
+                  </ul>
+                </li>
+                
+              </ul>
+              <form class="d-flex searchBtn" role="search">
+                <button class="btn btn-outline-light px-5 " type="submit">Search <i class="fa-solid fa-magnifying-glass g-5"></i></button>
+
+                <i class="fa-regular fa-moon fs-3 ms-4 mt-2 text-white d-none d-md-block"></i>
+              </form>
+            </div>
+          </div>
+      </nav> 
+
+      <!-- navbar end -->
+  </header>
+  <!-- hero section start  -->
+  <section id="carouselExampleInterval" class="carousel slide slider " data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item carousel-item-1 active" data-bs-interval="10000">
+        <div class="container">
+          <div class="row slider-content">
+            <div class="col-md-6 slide-content2 position-relative mt-5 pt-5 pt-md-5 mt-md-5">
+              <h4 class="text-secondary">The Future of Your Care</h4>
+              <h1 class="text-white">Spa & Skin Care</h1>
+              </div>
+            <div class="col-md-6 slide-content2 position-relative top-50 text-end">
+              <h1 class="text-secondary"> Future of Your Care</h1>
+              <h4 class="text-white"> Spa & Skin Care</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item carousel-item-2" data-bs-interval="2000">
+        <div class="container">
+          <div class="row slider-content">
+            <div class="col-md-6 slide-content2 position-relative mt-5 pt-5 pt-md-5 mt-md-5">
+              <h4 class="text-secondary">The Future of Your Care</h4>
+              <h1 class="text-white">Spa & Skin Care</h1>
+              </div>
+            <div class="col-md-6 slide-content2 position-relative top-50 text-end">
+              <h1 class="text-secondary"> Future of Your Care</h1>
+              <h4 class="text-white"> Spa & Skin Care</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item carousel-item-3">
+        <div class="container">
+          <div class="row slider-content">
+            <div class="col-md-6 slide-content2 position-relative mt-5 pt-5 pt-md-5 mt-md-5">
+              <h4 class="text-secondary">The Future of Your Care</h4>
+              <h1 class="text-white">Spa & Skin Care</h1>
+              </div>
+            <div class="col-md-6 slide-content2 position-relative top-50 text-end">
+              <h1 class="text-secondary"> Future of Your Care</h1>
+              <h4 class="text-white"> Spa & Skin Care</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </section>
+  <!-- hero section end  -->
+  <!-- Testimonia  section start  -->
+<section class="textimonial-section container my-5" id="home">
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+       <div class="row">
+        <div class="col-8 offset-2 text-center">
+          <i class="fa-solid fa-quote-left text-primary fs-1"></i>
+          <h2 class="py-3">Irha Sehrish</h2>
+          <p class="text-primary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem illum error, praesentium obcaecati accusamus non provident natus odit iure id dicta? Esse ex molestiae tenetur quaerat non? Quod, iste fugiat!</p>
+          <div class="social-link">
+            <a href="#"><i class="fa-brands fa-facebook text-dark"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter text-dark mx-2"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram text-dark"></i></a>
+          </div>
+        </div>
+       </div>
+      </div>
+      <div class="carousel-item">
+        <div class="col-8 offset-2 text-center">
+          <i class="fa-solid fa-quote-left text-primary fs-1"></i>
+          <h2 class="py-3">Tultul Waxson</h2>
+          <p class="text-primary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem illum error, praesentium obcaecati accusamus non provident natus odit iure id dicta? Esse ex molestiae tenetur quaerat non? Quod, iste fugiat!</p>
+          <div class="social-link">
+            <a href="#"><i class="fa-brands fa-facebook text-dark"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter text-dark mx-2"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram text-dark"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="col-8 offset-2 text-center">
+          <i class="fa-solid fa-quote-left text-primary fs-1"></i>
+          <h2 class="py-3">Jhon Abrahum </h2>
+          <p class="text-primary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem illum error, praesentium obcaecati accusamus non provident natus odit iure id dicta? Esse ex molestiae tenetur quaerat non? Quod, iste fugiat!</p>
+          <div class="social-link">
+            <a href="#"><i class="fa-brands fa-facebook text-dark"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter text-dark mx-2"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram text-dark"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev text-primary" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <i class="fa-solid fa-chevron-left text-primary fs-1"></i>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <i class="fa-solid fa-chevron-right text-primary fs-1"></i>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+ </section>
+ <!-- Testimonia  section end  -->
+     <!-- About sec start -->
+<section class="py-5 px-5 AboutSection" id="about">
+  <div class="container">
+      <div class="row">
+          <div class="col-12 col-lg-6">
+
+            <div>
+              <h1 class=" text-white mb-3 mt-5  shadow-lg display-1 fw-bold">
+                <strong>About us</strong>
+              </h1>
+                
+                <p class="text-white  fw-light fs-2">
+                    Aliquam efficitur sapien tempus est pretium euismod. Morbi venenatis, ligula nec suscipit auctor,
+                    dolor est hendrerit metus, vel faucibus arcu lectus at mauris. Vivamus malesuada euismod est.
+                </p>
+            </div>
+
+          </div>
+          <div class="col-lg-6 py-5">
+
+             <div>
+              <p class="pb-4  text-white fw-light fs-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet dui posuere, ullamcorper
+                lacus in, tincidunt nulla. Aliquam porttitor elit sit amet arcu bibendum bibendum. Aenean dui
+                odio,&nbsp;</p>
+
+                <div class="pt-5 ">
+                <button class="btn  btn-lg px-5 m-auto border-black text-primary fw-bold rounded-5 bg-primary me-3">Get Started</button>
+                 
+                <button class="btn btn-lg px-5 m-auto   border-black text-primary fw-bold rounded-5 bg-primary me-3">Read more</button>
+                
+              </div>
+             </div>
+      </div>
+  </div>
+</section>
+<!-- About sec end -->
+ <!-- Popular Services section start -->
+ <section class="about-section px-4 py-5 bg-primary" id="Popular Services">
+  <div class="container">
+    <div class="text-center pt-5" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000" >
+      <h5 class="fw-bolder text-primary section-title ">About Us</h5>
+      <h2 class="display-4 fw-bold">Popular Services</h2>
+      <p class="text-primary ">Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
+    </div>
+
+    <div class="row  py-5 g-5 ">
+      <div class=" col-md-6 col-lg-4 ">
+        <div class="border rounded-5 bg-white border-danger-subtle px-3  p-5">
+          <div class="text-center">
+            <div class="rounded service-img w-100">
+              <img class="rounded img-fluid image " src="asset/img/AdobeStock_646400213_Preview.jpeg " alt="team img">
+            </div>
+          <h3 class=" pt-3"><a href="" class="text-decoration-none text-dark fw-bold service-heading">The Latest Equipment</a></h3>
+          <p class="text-primary px-4"> Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
+          <i class="fa-solid fa-arrow-right border border-primary rounded-circle p-3 service-icon "></i>
+          </div>
+        </div>
+      </div>
+      
+      <div class=" col-md-6 col-lg-4 ">
+        <div class="border rounded-5 bg-white border-danger-subtle px-3  p-5">
+          <div class="text-center">
+            <div class="rounded service-img w-100">
+              <img class="rounded img-fluid image" src="asset/img/AdobeStock_candle.jpeg" alt="team img">
+            </div>
+          <h3 class="pt-3"><a href="" class="text-decoration-none text-dark fw-bold service-heading">The Latest Equipment</a></h3>
+          <p class="text-primary px-4"> Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
+          <i class="fa-solid fa-arrow-right border border-primary rounded-circle p-3 service-icon "></i>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col-md-6 col-lg-4 ">
+        <div class="border rounded-5 bg-white border-danger-subtle px-3  p-5">
+          <div class="text-center">
+            <div class="rounded service-img w-100">
+              <img class="rounded img-fluid image" src="asset/img/AdobeStock_A3.jpeg " alt="team img">
+            </div>
+          <h3 class="pt-3"><a href="" class="text-decoration-none text-dark fw-bold service-heading">The Latest Equipment</a></h3>
+          <p class="text-primary px-4"> Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.</p>
+          <i class="fa-solid fa-arrow-right border border-primary rounded-circle p-3 service-icon "></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+ <!-- Popular Services section end  -->
+  <!-- Most Demanding Services section start  -->
+  <section class="popular-section px-5 py-5 " id="service">
+    <div class="container " >
+       <div class=" mt-5 pb-5">
+        <div class="row">
+          <div class="col-lg-6">
+             <div class="popular-inner mb-5 mb-lg-0" data-aos="flip-left"
+             data-aos-easing="ease-out-cubic"
+             data-aos-duration="2000"
+             >
+                  <img src="asset/img/AdobeStock_277593231_Preview.jpeg" class="img-fluid w-100 rounded-4" alt="">
+                 
+             </div>
+              
+          </div>
+          <div class="col-lg-6">
+             <div>
+               <h4 class="fw-2 pt-2 Popular-tittle text-primary">Most Demanding Services</h4>
+               <h1 class="fw-bold display-5 pt-2 "> Memorable Beauty Experience</h1>
+               
+             <p class="fw-2 pt-2 pb-3">  Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet.Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi,Lorem ipsum dolor sit amet.</p>
+             <button class="btn btn-danger btn-lg px-5 m-auto  bg-secondary"> Our services</button>
+             </div>
+          </div>
+          
+       </div>
+       </div>
+    </div>
+    
+  </section>
+  <!-- Most Demanding Services section End -->
+  <!-- gallery section start  -->
+ <section class="gallery-section pb-5 px-5 bg-primary" id="gallary">
+  <div class="container">
+    <div class="text-center my-5 py-5 " data-aos="fade-left"
+    data-aos-anchor="#example-anchor"
+    data-aos-offset="500"
+    data-aos-duration="500">
+      <h5 class="fw-bolder text-primary section-title ">GALLERY</h5>
+      <h2 class="display-4 fw-bold">Photo Gallery</h2>
+     
+    </div>
+    <div class="row g-5">
+
+      <div class="col-lg-4">
+
+        <div class="mb-4  gallery-item">
+          <img src="asset/img/herbal-compress-herbal-spa-treatment-equipments-put-dark-floor.jpg" class="img-fluid rounded-3" alt="">
+          <div class="gallery d-flex justify-content-between rounded-pill bg-secondary p-2">
+            <h2 class=" text-white fs-5">Click Here</h2>
+            <i class="fa-solid fa-hand-pointer text-white  mx-1 mt-1 fs-5"></i>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="asset/img/AdobeStock_650981950_Preview.jpeg" class="img-fluid rounded-3" alt="">
+          <div class="gallery d-flex justify-content-between rounded-pill bg-secondary p-2">
+            <h2 class=" text-white fs-5">Click Here</h2>
+            <i class="fa-solid fa-hand-pointer text-white  mx-1 mt-1 fs-5"></i>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <div class=" mb-5 gallery-item w-100">
+          <img src="asset/img/AdobeStock_A3.jpeg" class="w-100 rounded-3" alt="">
+          <div class="gallery d-flex justify-content-between rounded-pill bg-secondary p-2">
+            <h2 class=" text-white fs-5">Click Here</h2>
+            <i class="fa-solid fa-hand-pointer text-white  mx-1 mt-1 fs-5"></i>
+          </div>
+        </div>
+        
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <div class="mb-4  gallery-item">
+          <img src="asset/img/AdobeStock_116066523_Preview2.jpeg" class="img-fluid rounded-3" alt="">
+          <div class="gallery d-flex justify-content-between rounded-pill bg-secondary p-2">
+            <h2 class=" text-white fs-5">Click Here</h2>
+            <i class="fa-solid fa-hand-pointer text-white  mx-1 mt-1 fs-5"></i>
+          </div>
+        </div>
+
+        <div class="  gallery-item">
+          
+            <img src="asset/img/luxury-aromatherapy-spa-treatment-with-scented-candle-flame-generated-by-ai.jpg" class="img-fluid rounded-3" alt="">
+            <div class="gallery d-flex justify-content-between rounded-pill bg-secondary p-2">
+              <h2 class=" text-white fs-5">Click Here</h2>
+              <i class="fa-solid fa-hand-pointer text-white  mx-1 mt-1 fs-5"></i>
+            </div>
+            
+          </div>
+          
+        </div>
+    </div>
+  </div>
+ </section>
+ <!-- gallery section end  -->
+
+
+ <!-- Special Offer section start  -->
+ <section class="offer-section py-5" id="Appoinment">
+  <div class="container d-flex justify-content-between align-items-center px-5 py-5"> 
+    <div>
+      <h4 class="section-title text-primary">Our Special Offer</h4>
+      <h2 class="text-white pt-3 fw-bold h1">
+        An Incredible Spa <br> Experience
+      </h2>
+
+    </div>
+    <button class="btn text-primary bg-white py-2 px-5  fs-5 offer-btn d-none d-md-block">Make An Appoinment</button>
+    <button class="btn text-primary bg-white py-2 px-2  fs-6 offer-btn d-md-none">Make An Appoinment</button>
+    
+  </div>
+ </section>
+ <!-- Special Offer section end  -->
+ <!-- contact section start -->
+
+<section class="popular-section bg-secondary px-5 py-5 " id="contact">
+  <div class="container ">
+     <div class=" mt-5 pb-5">
+      <div class="row">
+        <div class="col-lg-6">
+           <div class="popular-inner mb-5 mb-lg-0">
+                <div>
+                  <h4 class="fw-2 pt-2 Popular-tittle text-white">Join Us for the Most Demanding Services</h4>
+                  <h1 class="fw-bold display-5 pt-2 text-white-50">Stay Update for Memorable Beauty Experience</h1>
+                  
+                <p class="fw-2 pt-2 pb-3 text-white fs-4"> We appreciate your trust greatly! Our clients choose us and our products because they know we’re the best.</p>
+               
+                </div>
+                <img src="asset/img/g2.jpg" class="img-fluid w-100 rounded-4" alt="">
+           </div>
+            
+        </div>
+        <div class="col-lg-6">
+          <div class="container text-primary  px-5 ">
+            <form action=""  onsubmit="handleForm(event)" class="text-center p-4 bg-primary rounded-4 ">
+              <div class="form-control pt-4  ">
+                <label for="name" >Your Name</label>
+                <input type="text" name="name" id="name" placeholder="abc" value="" class="rounded-3 px-5"/>
+                <p></p>
+              </div>
+        
+              <div class="form-control pt-4  ">
+                <label for="email" >Your Email</label>
+                <input type="email"  name="email" id="email" placeholder="abc@gmail.com"  value="" class="rounded-3 px-5"/>
+                <p></p>
+              </div>
+        
+             
+              <div class="form-control  pt-4  ">
+                <label for="name" >Your Message</label>
+                <textarea   name="Massage" id="massage" cols="30" rows="10" placeholder="write your message" value="" class="rounded-3 px-5"></textarea>
+                
+                <p></p>
+              </div>
+        
+              <button type="submit" class="submitBtn bg-secondary text-white" >Submit</button>
+            </form>   
+            </div>
+        </div>
+        
+     </div>
+     </div>
+  </div>
+  
+</section>
+<!-- contact section end -->
+
+ 
+ <!-- footer top section start  -->
+ <section class="footer-top">
+  <div class="row g-2 py-3 bg-primary px-5">
+    <div class=" col-sm-4 col-lg-4 col-xl-2  ">
+      <div class="position-relative item overflow-hidden">
+        <img class="w-100 h-100 rounded-4" src="asset/img/massage-table-setting-with-white-candles.jpg" alt="">
+        <div class="position-absolute top-0 start-0 w-100 h-100 item-icon d-flex justify-content-center align-items-center">
+         <a class="text-decoration-none text-white " href="#"><i class="fa-regular fa-heart"> 1k</i></a>
+         <a class="text-decoration-none text-white ms-2 " href="#"><i class="fa-regular fa-comment"></i> 5</a>
+        </div>
+      </div>
+    </div>
+    <!-- single item end  -->
+    
+    
+    <div class="col-sm-4 col-lg-4 col-xl-2">
+      <div class="position-relative item overflow-hidden">
+        <img class="img-fluid rounded-4" src="asset/img/AdobeStock_684250217_Preview.jpeg" alt="">
+        <div class="position-absolute top-0 start-0 w-100 h-100 item-icon d-flex justify-content-center align-items-center">
+         <a class="text-decoration-none text-white " href="#"><i class="fa-regular fa-heart"> 1k</i></a>
+         <a class="text-decoration-none text-white ms-2 " href="#"><i class="fa-regular fa-comment"></i> 5</a>
+        </div>
+      </div>
+    </div>
+    <!-- single item end  -->
+    <div class="col-sm-4 col-lg-4 col-xl-2">
+      <div class="position-relative item overflow-hidden">
+        <img class="img-fluid rounded-4" src="asset/img/AdobeStock_650981950.jpeg" alt="">
+        <div class="position-absolute top-0 start-0 w-100 h-100 item-icon d-flex justify-content-center align-items-center">
+         <a class="text-decoration-none text-white " href="#"><i class="fa-regular fa-heart"> 1k</i></a>
+         <a class="text-decoration-none text-white ms-2 " href="#"><i class="fa-regular fa-comment"></i> 5</a>
+        </div>
+      </div>
+    </div>
+    <!-- single item end  -->
+    <div class="col-sm-4 col-lg-4 col-xl-2">
+      <div class="position-relative item overflow-hidden">
+        <img class="img-fluid rounded-4" src="asset/img/luxury-aromatherapy-spa-treatment-with-scented-candle-flame-generated-by-.jpg" alt="">
+        <div class="position-absolute top-0 start-0 w-100 h-100 item-icon d-flex justify-content-center align-items-center">
+         <a class="text-decoration-none text-white " href="#"><i class="fa-regular fa-heart"> 1k</i></a>
+         <a class="text-decoration-none text-white ms-2 " href="#"><i class="fa-regular fa-comment"></i> 5</a>
+        </div>
+      </div>
+    </div>
+    <!-- single item end  -->
+    <div class=" col-sm-4 col-lg-4 col-xl-2  ">
+      <div class="position-relative item overflow-hidden">
+        <img class="w-100 h-100 rounded-4" src="asset/img/AdobeStock_709396540_Preview.jpeg" alt="">
+        <div class="position-absolute top-0 start-0 w-100 h-100 item-icon d-flex justify-content-center align-items-center">
+         <a class="text-decoration-none text-white " href="#"><i class="fa-regular fa-heart"> 1k</i></a>
+         <a class="text-decoration-none text-white ms-2 " href="#"><i class="fa-regular fa-comment"></i> 5</a>
+        </div>
+      </div>
+    </div>
+    <!-- single item end  -->
+    <div class=" col-sm-4 col-lg-4 col-xl-2  ">
+      <div class="position-relative item overflow-hidden">
+        <img class="w-100 h-100 rounded-4" src="asset/img/herbal-compress-herbal-spa-treatment-equipments-put-dark-floor1.jpg" alt="">
+        <div class="position-absolute top-0 start-0 w-100 h-100 item-icon d-flex justify-content-center align-items-center">
+         <a class="text-decoration-none text-white " href="#"><i class="fa-regular fa-heart"> 1k</i></a>
+         <a class="text-decoration-none text-white ms-2 " href="#"><i class="fa-regular fa-comment"></i> 5</a>
+        </div>
+      </div>
+    </div>
+    <!-- single item end  -->
+  </div>
+ </section>
+ <!-- footer top section end  -->
+   <!-- footer section start  -->
+   <footer class="bg-secondary py-5">
+    <div class="container">
+      <div class=" d-lg-flex justify-content-between text-center ">
+        <a class="navbar-brand text-white fs-2 fw-bold" href="#">
+          <i class="fa-solid fa-hand-sparkles"></i>Spa Salon
+        </a>
+        <p class="text-white mt-2 fs-5">&copy; 2024 Spa Salon. All rights reserved | Designed by U.Habiba</p>
+        <div class="">
+          <a href="#"><i class="fa-brands fa-facebook  text-primary bg-white p-2 rounded-circle"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter text-primary bg-white p-2 rounded-circle mx-2"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram text-primary bg-white p-2 rounded-circle"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube text-primary bg-white p-2 rounded-circle mx-2"></i>
+            <i class=""></i></a>
+        </div>
+      </div>
+    </div>
+    
+   </footer>
+   <!-- footer section end  -->
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+                 <!-- main js -->
+    <script src="./asset/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+  </html>
+
+

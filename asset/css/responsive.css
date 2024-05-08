@@ -1,0 +1,33 @@
+@media screen and (max-width: 767px) {
+    .slider-content .position-relative {
+        position:static !important;
+    }
+    .slide-content2{
+        position: static !important;
+    }
+
+    header .navbar-collapse{
+        background-color: #330b3e ;
+        padding: 30px 0;
+    }
+    header .nav-link{
+        color: #fff;
+        
+    }
+.searchBtn{
+    display: none !important;
+}
+    .join-section .email-fild,
+    .join-section .btn-submit{
+       width: 100% !important;
+       margin-bottom: 10px;
+    }
+  
+}
+@media only screen and (min-width: 992px) {
+.about-section .service-img {
+    height: 300px;
+  
+
+}
+}
